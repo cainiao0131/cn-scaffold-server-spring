@@ -98,6 +98,9 @@ springdoc:
       name: ${springdoc.customer.title}
       url: ${springdoc.customer.url}
   group-configs:
-    - group: internal
+    - group: client
       packages-to-scan:
-        - org.cainiao.portal.controller.internal
+        - org.cainiao.scaffold.controller.client
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
